@@ -1,10 +1,5 @@
 import { ContactForm } from "@/components/ContactForm";
-import {
-  GithubIcon,
-  LinkedinIcon,
-  TwitterIcon,
-  MailIcon,
-} from "@/components/Icons"; // Assuming you have an EmailIcon component
+import { GithubIcon, LinkedinIcon, MailIcon } from "@/components/Icons"; // Assuming you have an EmailIcon component
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Footer() {
