@@ -41,14 +41,6 @@ export default function Footer() {
             <GithubIcon className="text-teal-600 transition-colors duration-150 hover:text-tera-500 dark:text-teal-400 dark:hover:text-white" />
           </a>
           <a
-            href={siteMetadata.twitter}
-            target="_blank"
-            className="h-6 w-6"
-            aria-label="link to Twitter"
-          >
-            <TwitterIcon className="text-teal-600 transition-colors duration-150 hover:text-tera-500 dark:text-teal-400 dark:hover:text-white" />
-          </a>
-          <a
             href={siteMetadata.linkedin}
             target="_blank"
             className="h-6 w-6"
