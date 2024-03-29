@@ -11,6 +11,12 @@ export default function ThemeSwitch(props: ThemeSwitchProps) {
 
   useEffect(() => setMounted(true), []);
 
+  useEffect(() => {
+    if (!mounted && theme !== "dark" && resolvedTheme !== "dark") {
+      setTheme("dark"); // Set the theme to dark if it's not already dark
+    }
+  }, [mounted, theme, resolvedTheme, setTheme]);
+
   const handleThemeChange = () => {
     if (props.setClose) {
       props.setClose(false);

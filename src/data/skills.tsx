@@ -1,20 +1,65 @@
 import Image from "next/image";
-import {
-  SiExpress,
-  SiSocketdotio,
-  SiPrisma,
-  SiNextdotjs,
-  SiFlask,
-} from "react-icons/si";
-import {
-  FramerMotionIcon,
-  GithubIcon,
-  ReactRouterDomIcon,
-  VitePwaIcon,
-} from "@/components/Icons";
+import { SiExpress, SiSocketdotio, SiFlask } from "react-icons/si";
+import { GithubIcon, ReactRouterDomIcon } from "@/components/Icons";
 import { SkillPillProps } from "@/components/Skills";
 
 export const LANGUAGES: SkillPillProps[] = [
+  {
+    name: "Python",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="python logo" src="/icons/python.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Java",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="python logo" src="/icons/java.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "SQL",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="python logo" src="/icons/python.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Javascript",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="javascript logo" src="/icons/javascript.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Typescript",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="typescript logo" src="/icons/typescript.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Matlab",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="python logo" src="/icons/matlab.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "GO",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="python logo" src="/icons/go.svg" fill />
+      </span>
+    ),
+  },
   {
     name: "HTML",
     icon: (
@@ -39,30 +84,6 @@ export const LANGUAGES: SkillPillProps[] = [
       </span>
     ),
   },
-  {
-    name: "Javascript",
-    icon: (
-      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="javascript logo" src="/icons/javascript.svg" fill />
-      </span>
-    ),
-  },
-  {
-    name: "Typescript",
-    icon: (
-      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="typescript logo" src="/icons/typescript.svg" fill />
-      </span>
-    ),
-  },
-  {
-    name: "Python",
-    icon: (
-      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="python logo" src="/icons/python.svg" fill />
-      </span>
-    ),
-  },
 ];
 
 export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
@@ -75,9 +96,22 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
     ),
   },
   {
-    name: "Nextjs",
-    icon: <SiNextdotjs className="h-5 w-5 sm:h-8 sm:w-8" />,
+    name: "Vuejs",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="reactjs logo" src="/icons/vue.svg" fill />
+      </span>
+    ),
   },
+  {
+    name: "Fast API",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="reactjs logo" src="/icons/fastapi.svg" fill />
+      </span>
+    ),
+  },
+
   {
     name: "React-router-dom",
     icon: <ReactRouterDomIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
@@ -99,28 +133,12 @@ export const LIBRARY_FRAMEWORK: SkillPillProps[] = [
     ),
   },
   {
-    name: "MUI",
+    name: "TensorFlow",
     icon: (
       <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="mui logo" src="/icons/mui.svg" fill />
+        <Image alt="tailwindcss logo" src="/icons/tensor.svg" fill />
       </span>
     ),
-  },
-  {
-    name: "Framer motion",
-    icon: <FramerMotionIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
-  },
-  {
-    name: "Vite",
-    icon: (
-      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
-        <Image alt="vite logo" src="/icons/vite.svg" fill />
-      </span>
-    ),
-  },
-  {
-    name: "Vite pwa",
-    icon: <VitePwaIcon className="h-5 w-5 sm:h-8 sm:w-8" />,
   },
 ];
 
@@ -164,12 +182,6 @@ export const DATABASE_ORM_PILL: SkillPillProps[] = [
       </span>
     ),
   },
-  {
-    name: "Prisma",
-    icon: (
-      <SiPrisma className="h-5 w-5 fill-[#2d3748] dark:fill-zinc-100 sm:h-8 sm:w-8" />
-    ),
-  },
 ];
 
 export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
@@ -178,6 +190,14 @@ export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
     icon: (
       <span className="relative h-5 w-5 sm:h-8 sm:w-8">
         <Image alt="git logo" src="/icons/git.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Amazon Web Services",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="postman logo" src="/icons/aws.svg" fill />
       </span>
     ),
   },
@@ -198,6 +218,22 @@ export const TOOLS_TECHNOLOGIES: SkillPillProps[] = [
     icon: (
       <span className="relative h-5 w-5 sm:h-8 sm:w-8">
         <Image alt="postman logo" src="/icons/postman.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Redis",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="postman logo" src="/icons/redis.svg" fill />
+      </span>
+    ),
+  },
+  {
+    name: "Elastic Search",
+    icon: (
+      <span className="relative h-5 w-5 sm:h-8 sm:w-8">
+        <Image alt="postman logo" src="/icons/elastic.svg" fill />
       </span>
     ),
   },

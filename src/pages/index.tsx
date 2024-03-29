@@ -19,18 +19,18 @@ export default function Home() {
         className="pointer-events-none fixed inset-0 -z-10 h-full w-full"
       />
       <NextSeo
-        title="Amit Chauhan | React and Frontend Developer"
-        description="Explore the professional portfolio of Amit Chauhan, a skilled React and Frontend Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        title="Kartik Chaudhari | React and Frontend Developer"
+        description="Explore the professional portfolio of Kartik Chaudhari, a skilled React and Frontend Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Amit Chauhan - React and Frontend Developer Portfolio",
+          title: "Kartik Chaudhari - React and Frontend Developer Portfolio",
           description:
-            "Dive into the world of web development with Amit Chauhan. Discover a React and Frontend Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+            "Dive into the world of web development with Kartik Chaudhari. Discover a React and Frontend Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              alt: "Kartik Chaudhari - Portfolio Image",
             },
           ],
           siteName: siteMetadata.siteName,

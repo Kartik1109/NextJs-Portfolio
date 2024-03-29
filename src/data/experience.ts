@@ -2,35 +2,43 @@ import { TShowCaseListDetatils } from "@/components/ShowCaseList";
 
 export const EXPERIENCE: TShowCaseListDetatils[] = [
   {
-    title: "Reactjs Frontend Developer",
+    title: "Software Engineer Intern",
     organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
+      name: "Tucows",
+      href: "https://www.tucows.com/",
     },
-    date: "Oct 2023 - Present",
-    location: "Mumbai",
-    description: "Reactjs and Nextjs app development",
+    date: "May 2023 - Present",
+    location: "Toronto, Canada",
+    description: "",
   },
   {
-    title: "Engineering Trainee",
+    title: "Teaching Assistant - Artificial Intelligence",
     organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
+      name: "McMaster University",
+      href: "https://www.mcmaster.ca/",
     },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
-    description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+    date: "Sep 2021 - Dec 2023",
+    location: "Hamilton, Canada",
+    description: "",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Software Developer Intern",
     organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
+      name: "McMaster University",
+      href: "https://www.mcmaster.ca/",
     },
-    date: "Winter - 2022",
-    location: "Remote",
-    description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+    date: "Jan 2022 - April 2022",
+    location: "Hamilton, Canada",
+    description: "",
+  },
+  {
+    title: "Full Stack Developer Intern",
+    organisation: {
+      name: "Tradify Services",
+      href: "https://tfsbs.com/",
+    },
+    date: "May 2021 - August 2021",
+    location: "Doha, Qatar",
+    description: "",
   },
 ];

@@ -1,5 +1,10 @@
 import { ContactForm } from "@/components/ContactForm";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/Icons";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  MailIcon,
+} from "@/components/Icons"; // Assuming you have an EmailIcon component
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Footer() {
@@ -11,19 +16,21 @@ export default function Footer() {
             Get in touch
           </span>
         </div>
-        <a
-          href={`mailto:${siteMetadata.email}`}
-          target="_blank"
-          className="mb-6 cursor-pointer text-center text-2xl font-bold underline sm:text-4xl lg:text-7xl"
-        >
-          <span>amitchauhan263871@</span>
-          <br />
-          <span>gmail.com</span>
-        </a>
+        <div className="mb-6 flex flex-col items-center">
+          <MailIcon className="mb-2 h-8 w-8 text-teal-300" />{" "}
+          {/* Added EmailIcon component for styling */}
+          <a
+            href={`mailto:${siteMetadata.email}`}
+            target="_blank"
+            className="text-center text-lg font-bold underline sm:text-2xl lg:text-4xl"
+          >
+            kartiknc11@gmail.com
+          </a>
+        </div>
         <ContactForm />
       </div>
       <div className="flex w-full flex-col items-center justify-between gap-8 text-center  md:flex-row md:justify-between lg:mx-auto lg:max-w-7xl">
-        <span>©2023 Amit Chauhan</span>
+        <span>©2023 Kartik Chaudhari</span>
         <div className="flex gap-8">
           <a
             href={siteMetadata.github}
